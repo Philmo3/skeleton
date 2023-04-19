@@ -1,0 +1,9 @@
+<div (click)="select()">
+  <ng-container *ngIf="elementText; else elementViewRef">
+    <p>{{elementText}}</p>
+  </ng-container>
+
+  <ng-template #elementViewRef>
+    <ng-content select="[element-template]"></ng-content>
+  </ng-template>
+</div>

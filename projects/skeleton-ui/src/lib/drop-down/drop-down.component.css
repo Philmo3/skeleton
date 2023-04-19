@@ -1,0 +1,7 @@
+:host{
+  position: relative;
+}
+
+.drop-down-value-container{
+  display: flex;
+}

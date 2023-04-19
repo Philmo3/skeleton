@@ -1,0 +1,13 @@
+
+<div id="drop-down-container">
+  <div class="drop-down-value-container" (click)="clickOnDropDown()">
+    <ng-content select="[prefix]"></ng-content>
+    <p class="drop-down-placeholder">{{placeholder}}</p>
+    <ng-content select="[suffix]"></ng-content>
+  </div>
+  <skeleton-input-overlay [active]="activeOverlay">
+    <ng-content select="skeleton-drop-down-element" ngProjectAs="element-template"></ng-content>
+  </skeleton-input-overlay>
+</div>
+
+

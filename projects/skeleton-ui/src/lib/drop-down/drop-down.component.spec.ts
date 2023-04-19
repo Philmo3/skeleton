@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SkeletonUiComponent } from './skeleton-ui.component';
+import { DropDownComponent } from './drop-down.component';
 
-describe('SkeletonUiComponent', () => {
-  let component: SkeletonUiComponent;
-  let fixture: ComponentFixture<SkeletonUiComponent>;
+describe('DropDownComponent', () => {
+  let component: DropDownComponent;
+  let fixture: ComponentFixture<DropDownComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SkeletonUiComponent ]
+      imports: [ DropDownComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SkeletonUiComponent);
+    fixture = TestBed.createComponent(DropDownComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
